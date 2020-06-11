@@ -1,5 +1,7 @@
 # seqDepth
 
+This code allows to randomly sample a large fasta file at n number of times with replacement. Once sampled, then gene is predicted for each sub-sampled fasta files using `prodigal`. Predicted gene file is searched for the gene of interest. Protein sequnces for a gene of interest is downloaded from uniport, aligned with `mafft`, and HMM profile is created with `hmmbuild` function from `Hmmer`. The built HMM profile is then used to search gene of interest in the sub-sampled fasta files. 
+
 ```
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
