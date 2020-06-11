@@ -7,10 +7,14 @@ Here you can find approaches to:
     ii)     Example of creating a HMM profile for gene
     iii)    Search genes predicted from a genome against HMM profiles
     
- Tools/Program used:: 
-    i)      [prodigal](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-119)
-    ii)     [hmmer](http://hmmer.org)
-    iii)    [muscle](https://www.ebi.ac.uk/Tools/msa/muscle/)
+ ##### Tools/Program used:: 
+[prodigal](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-119)
+
+
+[hmmer](http://hmmer.org)
+
+
+[muscle](https://www.ebi.ac.uk/Tools/msa/muscle/)
     
 This code allows to randomly sample a large fasta file at n number of times with replacement. Once sampled, then gene is predicted for each sub-sampled fasta files using `prodigal`. Predicted gene file is searched for the gene of interest using HMM profile in `hmmer`. In order to run hmmer search,  at first protein sequnces for a gene of interest is downloaded from uniport, aligned with `muscle`, and HMM profile is created with `hmmbuild` function from `Hmmer`. The built HMM profile is then used to search gene of interest in the sub-sampled fasta files. 
 
