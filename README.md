@@ -101,9 +101,9 @@ plt.show()
 
 ```
 
-[[https://github.com/ravinpoudel/metagenomics/blob/master/Assembly-Based-Metagenomics.png|alt=octocat]]
 
 
+[[https://github.com/ravinpoudel/seqDepth/blob/master/bft.png]]
 
 
 
