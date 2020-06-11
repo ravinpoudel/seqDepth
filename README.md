@@ -1,5 +1,5 @@
 # seqDepth
-## Question:: Is ability to detect a gene a function of seqencing depth? 
+## Question:: Is ability to detect "a gene" a function of seqencing depth? 
 
 This code allows to randomly sample a large fasta file at n number of times with replacement. Once sampled, then gene is predicted for each sub-sampled fasta files using `prodigal`. Predicted gene file is searched for the gene of interest using HMM profile in `hmmer`. In order to run hmmer search,  at first protein sequnces for a gene of interest is downloaded from uniport, aligned with `mafft`, and HMM profile is created with `hmmbuild` function from `Hmmer`. The built HMM profile is then used to search gene of interest in the sub-sampled fasta files. 
 
