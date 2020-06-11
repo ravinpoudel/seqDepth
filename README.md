@@ -10,11 +10,21 @@ Here you can find approaches to:
  ##### Tools/Program used:: 
 [prodigal](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-119)
 
+Prodigal (Prokaryotic Dynamic Programming Genefinding Algorithm) is a microbial (bacterial and archaeal) gene/ORF finding program.
+
 
 [hmmer](http://hmmer.org)
 
+Hmmer provides tools for making probabilistic models of protein and DNA sequence domain families –called profile hidden Markov models, profile HMMs, or just profiles – and for using these profiles to annotate new sequences, to search sequence databases for additional homologs, and to make deep multiple sequence alignments.
+Steps:
+1)  Multiple sequence alignment of a homologous family of protein
+2)  Making HMM models using the aligned output
+3)  Use the constructed HMM profile to annotate other sequence/aa.
+
 
 [muscle](https://www.ebi.ac.uk/Tools/msa/muscle/)
+
+MUSCLE (MUltiple Sequence Comparison by Log-Expectatio) is multiple alignment programs. 
     
 This code allows to randomly sample a large fasta file at n number of times with replacement. Once sampled, then gene is predicted for each sub-sampled fasta files using `prodigal`. Predicted gene file is searched for the gene of interest using HMM profile in `hmmer`. In order to run hmmer search,  at first protein sequnces for a gene of interest is downloaded from uniport, aligned with `muscle`, and HMM profile is created with `hmmbuild` function from `Hmmer`. The built HMM profile is then used to search gene of interest in the sub-sampled fasta files. 
 
