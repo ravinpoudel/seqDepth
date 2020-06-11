@@ -1,6 +1,6 @@
 # seqDepth
 
-This code allows to randomly sample a large fasta file at n number of times with replacement. Once sampled, then gene is predicted for each sub-sampled fasta files using `prodigal`. Predicted gene file is searched for the gene of interest. Protein sequnces for a gene of interest is downloaded from uniport, aligned with `mafft`, and HMM profile is created with `hmmbuild` function from `Hmmer`. The built HMM profile is then used to search gene of interest in the sub-sampled fasta files. 
+This code allows to randomly sample a large fasta file at n number of times with replacement. Once sampled, then gene is predicted for each sub-sampled fasta files using `prodigal`. Predicted gene file is searched for the gene of interest using HMM profile in `hmmer`. In order to run hmmer search,  at first protein sequnces for a gene of interest is downloaded from uniport, aligned with `mafft`, and HMM profile is created with `hmmbuild` function from `Hmmer`. The built HMM profile is then used to search gene of interest in the sub-sampled fasta files. 
 
 ```
 #!/usr/bin/env python3
@@ -11,7 +11,6 @@ Created on Wed Jun 10 17:03:23 2020
 @author: ravinpoudel
 """
 
-
 import os
 import subprocess
 import pandas as pd
@@ -20,7 +19,9 @@ from Bio import SeqIO
 from random import choices
 from random import seed
 
+# input fasta file
 fasta = "MSM9VZPH_contigs.fna"
+
 
 def rsamplefasta(fasta, n, nseed):
     
