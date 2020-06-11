@@ -103,7 +103,7 @@ plt.show()
 
 
 
-[[https://github.com/ravinpoudel/seqDepth/blob/master/bft.png]]
+![alt text][[https://github.com/ravinpoudel/seqDepth/blob/master/bft.png]]
 
 
 
