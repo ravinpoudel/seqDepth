@@ -8,7 +8,7 @@ Created on Wed Jun 10 17:03:23 2020
 @author: ravinpoudel
 """
 
-
+```
 import os
 import subprocess
 import pandas as pd
@@ -16,8 +16,6 @@ import matplotlib.pyplot as plt
 from Bio import SeqIO
 from random import choices
 from random import seed
-
-
 
 fasta = "MSM9VZPH_contigs.fna"
 
@@ -98,7 +96,7 @@ plt.show()
 #####
 
 
-
+```
 
 
 
