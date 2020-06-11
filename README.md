@@ -10,7 +10,7 @@ Here you can find approaches to:
  ##### Tools/Program used:: 
 [prodigal](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-119)
 
-Prodigal (Prokaryotic Dynamic Programming Genefinding Algorithm) is a microbial (bacterial and archaeal) gene/ORF finding program.
+Prodigal (Prokaryotic Dynamic Programming Genefinding Algorithm) is a microbial (bacterial and archaeal) is a gene/ORF finding program.
 
 
 [hmmer](http://hmmer.org)
